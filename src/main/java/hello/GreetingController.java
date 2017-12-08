@@ -1,5 +1,6 @@
 package hello;
 
+import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,4 +17,14 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
     }
+@requestMapping("/data")
+public List<String> dataNegara(){
+	List<String> data = new ArrayList();
+	data.add("Indonesia");
+	data.add("Malaysia");
+			+ 
+	
+	return data.stream()
+	
+}
 }
